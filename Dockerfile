@@ -1,5 +1,7 @@
 FROM node:18-alpine
 
+LABEL org.opencontainers.image.source=https://github.com/ilya-games/todo-app
+
 COPY . /app
 WORKDIR /app
 
