@@ -142,7 +142,7 @@ const CreateToDo = ({ todos, setTodos }) => {
           value={date}
           onChange={(e) => setDate(e.target.value)}
         />
-        <Button>Nearly useless button</Button>
+        <Button>Useless button</Button>
       </Stack>
     </Box>
   );
