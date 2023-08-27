@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  app:
+    container_name: todo_app
+    build: .
+    image: ghcr.io/ilya-games/todo_app
+    restart: always
+    ports:
+      - "3000:3000"
