@@ -3,12 +3,8 @@ name: publish app
 on:
   push:
     branches: ["main"]
-    paths:
-     - '.'
   pull_request:
     branches: ["main"]
-    paths:
-     - '.'
 
 env:
   REGISTRY: ghcr.io
