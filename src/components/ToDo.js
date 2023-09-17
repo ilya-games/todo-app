@@ -110,16 +110,16 @@ const CreateToDo = ({ todos, setTodos }) => {
       }}
     >
       <Stack direction="row" spacing={2}>
-        <Tooltip arrow title={<Typography>add a ToDo item</Typography> }>
+        
           <Button
             variant="outlined"
             onClick={handleClick}
             disabled={title==="" || date===""}
             color="inherit"
           >
+            {/* <Tooltip arrow title={<Typography>add a ToDo item</Typography> }>Add</Tooltip>  */}
             Add
           </Button>
-        </Tooltip>
         <TextField
           size="small"
           value={title}
