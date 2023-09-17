@@ -5,11 +5,11 @@ LABEL org.opencontainers.image.source=https://github.com/ilya-games/todo-app
 COPY . /app
 WORKDIR /app
 
-RUN npm ci --force
-RUN npm run build
+RUN npm install
 
 ENV NODE_ENV production
+ENV WDS_SOCKET_PORT=0
 
 EXPOSE 3000
 
-CMD ["npx", "serve", "build"]
+CMD ["npm", "start"]
